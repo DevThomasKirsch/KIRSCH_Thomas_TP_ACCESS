@@ -1,26 +1,42 @@
+@bleufonce : #2C3E50;
+@rouge : #E54D42;
+@blanc : #ECF0F1;
+@bleu : #3A99D8;
+
+body {
+    background-color: @blanc; 
+}
 .container {
     width: 1200px;
     height: 100%;
     margin: auto;
-    padding: 0;
+}
+
+@media screen and (max-width: 600px){
+    .container { width: 100%; }
+    .col-group { padding: 0 !important; }
 }
 
 header {
     .banner {
-        height: 100px; 
-        background-color: lightgrey;
+        height: 200px; 
+        background-color: @blanc;
     } 
 
     /* Rudimentary mega menu CSS for demonstration */
 
+    nav {
+        width: 100%;
+        background-color: @bleufonce;
+    }
     /* mega menu list */
     .nav-menu {
         display: block;
-        width: 100%;
-        background-color: lightcoral;
+        width: 1200px;
+        background-color: @bleufonce;
         position: relative;
         list-style: none;
-        margin: 0;
+        margin: auto;
         padding: 0;
         z-index: 15;
     }
@@ -29,27 +45,47 @@ header {
     .nav-item {
         list-style: none;
         display: inline-block;
-        padding: 0;
+        padding: 10px;
         margin: 0;
+    }
+
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 5px 20px 5px 10px;
+        margin-right: 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+        border-color: @bleu;
     }
 
     /* first descendant link within a top level navigation item */
     .nav-item > a {
         position: relative;
         display: inline-block;
-        padding: 0.5em 1em;
+        padding: 10px;
         margin: 0 0 -1px 0;
         border: 1px solid transparent;
         text-decoration: none;
         color: #FFF;
     }
-    
+
     .nav-right {
         position: relative;
         display: inline-block;
-        padding: 0.5em 1em;
-        margin: 0 0 -1px 0;
         float: right;
+        margin-right: 50px;
+        margin-top: 5px;
     }
 
     /* focus/open states of first descendant link within a top level 
@@ -57,23 +93,25 @@ header {
     .nav-item > a:focus,
     .nav-item > a.open {
         border: 1px solid #dedede;
+        padding: 10px;
     }
 
     /* open state of first descendant link within a top level 
     navigation item */
     .nav-item > a.open {
-        background-color: coral;
+        background-color: @bleu;
         color: #FFF;
         z-index: 1;
+        padding: 10px;
     }
 
     /* sub-navigation panel */
     .sub-nav {
         position: absolute;
         display: none;
-        top: 2.6em;
+        top: 3.1em;
         margin-top: -1px;
-
+        padding: 5px 30px;
         border: 1px solid #dedede;
         background-color: #fff;
     }
@@ -96,16 +134,76 @@ header {
         list-style-type: none;
         margin: 10px;
         padding: 0;
-        
+
         a {
-            color: coral;
+            color: @bleu;
             text-decoration: none;
         }
-        
+
         a:hover {
             font-weight: 700;
         }
     }
 }
 
+section {
 
+    .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+article {
+    text-align: center;
+    padding-bottom: 20px;
+
+    h2 {
+        padding: 20px 15px; 
+        color: #FFF;
+        background-color: @rouge;
+        text-transform: uppercase;
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 0;
+        border: 1px solid @bleufonce;
+
+        th, td {
+            padding: 5px;
+            padding-left: 8px;
+            text-align: left;
+            color: @bleufonce;
+        }
+
+        th {
+            background-color: @bleufonce;
+            color: #FFF;
+        }
+    }
+
+    .suiteclassement {
+            text-align: right;
+            margin-top: 10px;
+        a {
+            color: @bleufonce;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            transition: 0.4s ease;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: @bleufonce;
+    color: #FFF;
+    padding: 15px 0;
+}

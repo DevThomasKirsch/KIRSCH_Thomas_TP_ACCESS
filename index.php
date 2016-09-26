@@ -1,53 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Thomas KIRSCH - TP Access Web</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/fluidable.css">
-        <link rel="stylesheet" href="css/normalise.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/slippry.css">
-        <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>    
+       
+       <?php require('header.php'); ?>
+      
     </head>
 
     <body>
         <header>
-            <div class="col-group">
-                <div class="col-12">
-                    <div class="banner">
-                    </div>
-                    <nav>
-                        <ul class="nav-menu">
-                            <li class="nav-item">
-                                <a href="#">Accueil</a>
-                                <div class="sub-nav">
-                                    <ul class="sub-nav-group">
-                                        <li><a href="#">Sous menu 1</a></li>
-                                        <li><a href="#">Sous menu 2</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">Login</a>
-                                <div class="sub-nav">
-                                    <ul class="sub-nav-group">
-                                        <li><a href="#">Sous menu 1</a></li>
-                                        <li><a href="#">Sous menu 2</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="#">Contact</a></li>
-                            <li class="nav-item nav-right">
-                                <input type="text" placeholder="Rechercher...">
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <?php require('nav.php'); ?>
         </header>
 
         <section>
@@ -97,8 +58,48 @@
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>Module 4</td>
-                            <td>Module 3</td>
+                            <td>Andy Murray</td>
+                            <td>Grande Bretagne</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Stan Wawrinka</td>
+                            <td>Suisse</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rafael Nadal</td>
+                            <td>Espagne</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Kei Nishikori</td>
+                            <td>Japon</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Milos Raonic</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Roger Federer</td>
+                            <td>Suisse</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Gael Monfils</td>
+                            <td>France</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Tomas Berdych</td>
+                            <td>République Tchèque</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Dominic Thiem</td>
+                            <td>Autriche</td>
                         </tr>
                     </table>
                 </div>
@@ -111,13 +112,53 @@
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>Novak Djokovic</td>
-                            <td>Serbie</td>
+                            <td>Angelique Kerber</td>
+                            <td>Allemagne</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>Module 4</td>
-                            <td>Module 3</td>
+                            <td>Serena Williams</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Garbine Muguruza</td>
+                            <td>Espagne</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Agnieszka Radwanska</td>
+                            <td>Pologne</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Simona Halep</td>
+                            <td>Roumanie</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Karolina Pliskova</td>
+                            <td>République Tchèque</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Venus Williams</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Carla</td>
+                            <td>Suarez Navarro</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Madison Keys</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Svetlana Kuznetsova</td>
+                            <td>Grande Bretagne</td>
                         </tr>
                     </table>
                 </div>
@@ -129,40 +170,51 @@
                 </div>
             </div>
         </article>
-
-        <footer>
-            <div class="container">
-                <div class="col-group">
-                    <div class="col-4">
-                        <h4>Le plan du site</h4>
-                        <ul>
-                            <li>Accueil</li>
-                            <li>Login</li>
-                            <li>Créer votre compte</li>
-                            <li>Contact</li>
-                        </ul>
+        
+        <article class="container">
+            <h2>Les tournois de la semaine</h2>
+            <div class="col-group">
+                <div class="col-3">
+                    <div class="tournoi">
+                        <div class="tournoi-header">
+                            <h5>Paris</h5>
+                            <h5>FRANCE</h5>
+                        </div>
+                        <p>Le tournoi ATP de Paris se déroule du 21 octobre au 04 novembre 2016. 1000 points ATP World Tour sont à saisir pour le gagnant.</p>
                     </div>
-                    <div class="col-4">
-                        <h4>Les autres sites du tennis</h4>
-                        <ul>
-                            <li>FFT</li>
-                            <li>ATP World Tour</li>
-                            <li>WTA World Tour</li>
-                        </ul>
+                </div>
+                <div class="col-3">
+                    <div class="tournoi">
+                        <div class="tournoi-header">
+                            <h5>Shanghai</h5>
+                            <h5>CHINA</h5>
+                        </div>
+                        <p>Le tournoi ATP de Shanghai se déroule du 09 octobre au 16 octobre 2016. 1000 points ATP World Tour sont à saisir pour le gagnant.</p>
                     </div>
-                    <div class="col-4">
-                        <h4>Les réseaux sociaux pour suivre le tennis</h4>
-                        <ul>
-                            <li>Facebook FFT</li>
-                            <li>Facebook WeAreTennis</li>
-                            <li>Twitter FFT</li>
-                            <li>Twitter WeAreTennis</li>
-                            <li>Twitter ATP World Tour</li>
-                            <li>Youtube ATP World Tour</li>
-                        </ul>
+                </div>
+                <div class="col-3">
+                    <div class="tournoi">
+                        <div class="tournoi-header">
+                            <h5>Tokyo</h5>
+                            <h5>JAPAN</h5>
+                        </div>
+                        <p>Le tournoi WTA de Tokyo se déroule du 19 septembre au 26 septembre 2016. Un tournoi majeur du circuit international WTA.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="tournoi">
+                        <div class="tournoi-header">
+                            <h5>Beijing</h5>
+                            <h5>CHINA</h5>
+                        </div>
+                        <p>Le tournoi de Pékin se déroule du 1er octobre au 09 octobre 2016. Le dernier tournoi de la saison pour les joueuses professionnelles.</p>
                     </div>
                 </div>
             </div>
+        </article>
+
+        <footer>
+            <?php require('footer.php'); ?>
         </footer>
 
         <!-- include jquery -->

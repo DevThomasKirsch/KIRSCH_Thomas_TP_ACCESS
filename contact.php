@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-
+        <title>Contactez l'assistance</title>
         <?php require('header.php'); ?>
 
     </head>
@@ -21,14 +21,14 @@
                 <div class="col-12">
                     <div id="form-div">
                         <form class="form" id="form1">
-                            <label for="name" class="name">&nbsp;</label>
-                            <input name="name" type="text" id="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" title="Tapez votre nom ici" />
+                            <label for="name" class="name">Votre nom</label>
+                            <input name="name" type="text" id="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre nom" title="Tapez votre nom ici" />
 
-                            <label for="email" class="email">&nbsp;</label>
-                            <input name="email" type="text" id="email" class="validate[required,custom[email]] feedback-input" placeholder="Email" title="Tapez votre adresse mail ici" />
+                            <label for="email" class="email">Votre mail</label>
+                            <input name="email" type="text" id="email" class="validate[required,custom[email]] feedback-input" placeholder="Votre Email" title="Tapez votre adresse mail ici" />
 
-                            <label for="comment" class="text">&nbsp;</label>
-                            <textarea name="text" id="comment" class="validate[required,length[6,300]] feedback-input" placeholder="Comment" title="Ecrivez votre message ici"></textarea>
+                            <label for="comment" class="text">Votre message</label>
+                            <textarea name="text" id="comment" class="validate[required,length[6,300]] feedback-input" placeholder="Votre message" title="Ecrivez votre message ici"></textarea>
 
 
                             <div class="submit">

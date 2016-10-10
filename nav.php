@@ -5,26 +5,26 @@
         <nav>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.php">Accueil</a>
+                    <a href="index.php" title="Accueil du site">Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a href="#">Liens externes</a>
                     <div class="sub-nav">
                         <ul class="sub-nav-group">
-                            <li><a href="http://www.atpworldtour.com/en" target="_blank">ATP World Tour</a></li>
-                            <li><a href="http://www.wtatennis.com/" target="_blank">WTA World Tour</a></li>
+                            <li><a href="http://www.atpworldtour.com/en" target="_blank" title="Site officiel ATP">ATP World Tour <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                            <li><a href="http://www.wtatennis.com/" target="_blank" title="Site officiel WTA">WTA World Tour <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Actualités</a>
+                    <a href="#" title="Actualité du site">Actualités</a>
                 </li>
                 <li class="nav-item">
                     <a href="#">Login</a>
                     <div class="sub-nav">
                         <ul class="sub-nav-group">
-                            <li><a href="account.php">Créer votre compte</a></li>
-                            <li><a href="login.php">Se connecter</a></li>
+                            <li><a href="account.php" title="Créer votre compte">Créer votre compte</a></li>
+                            <li><a href="login.php" title="Se connecter au site">Se connecter</a></li>
                         </ul>
                     </div>
                 </li>

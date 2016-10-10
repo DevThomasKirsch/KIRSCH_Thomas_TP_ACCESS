@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-       
+       <title>Classement ATP / WTA</title>
        <?php require('header.php'); ?>
       
     </head>
@@ -17,22 +17,22 @@
                     <ul id="out-of-the-box-demo">
                         <li>
                             <a href="#slide1">
-                                <img src="img/tennis3.jpg" height="450" alt="">
+                                <img src="img/tennis3.jpg" height="450" alt="Diaporama de tennis - Photo 1" title="Photo de tennis numéro 1">
                             </a>
                         </li>
                         <li>
                             <a href="#slide2">
-                                <img src="img/tennis2.jpg" height="450"  alt="">
+                                <img src="img/tennis2.jpg" height="450"  alt="Diaporama de tennis - Photo 2" title="Photo de tennis numéro 2">
                             </a>
                         </li>
                         <li>
                             <a href="#slide3">
-                                <img src="img/tennis1.jpg" height="450" alt="">
+                                <img src="img/tennis1.jpg" height="450" alt="Diaporama de tennis - Photo 3" title="Photo de tennis numéro 3">
                             </a>
                         </li>
                         <li>
                             <a href="#slide4">
-                                <img src="img/tennis4.jpg" height="450" alt="">
+                                <img src="img/tennis4.jpg" height="450" alt="Diaporama de tennis - Photo 4" title="Photo de tennis numéro 4">
                             </a>
                         </li>
                     </ul>

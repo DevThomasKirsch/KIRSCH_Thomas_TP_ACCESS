@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-
+        <title>Connexion au site</title>
         <?php require('header.php'); ?>
 
     </head>
@@ -18,10 +18,10 @@
                 <div class="col-12">
                     <div id="form-div">
                         <form class="form" id="form1">
-                            <label for="name" class="name">&nbsp;</label>
+                            <label for="name" class="name">Votre pseudo</label>
                             <input name="name" type="text" id="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre nom d'utilisateur ou adresse mail" title="Tapez votre nom ici" />
 
-                            <label for="comment" class="email">&nbsp;</label>
+                            <label for="comment" class="email">Votre mot de passe</label>
                             <input name="email" type="password" id="comment" class="validate[required,custom[email]] feedback-input" placeholder="Votre mot de passe" title="Tapez votre adresse mail ici" />
 
                             <div class="submit">

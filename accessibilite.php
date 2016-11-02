@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Tennis World - Connexion au site</title>
+        <title>Tennis World - Accessibilité</title>
         <?php require('header.php'); ?>
 
     </head>
 
     <body>
-       <?php 
+        <?php 
         // Init variable tabindex
         $i = 0;
         ?>
-        <header role="banner" aria-label="En tête du site">
-           <div id="evitement">
+        <header role="banner">
+            <div id="evitement">
                 <button onclick="window.location.hash='#form-div'" tabindex="<?php echo $i += 1; ?>" accesskey="p">Aller au contenu</button>
                 <button onclick="window.location.hash='#nav'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
                 <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
@@ -22,23 +22,13 @@
 
 
         <article class="container" role="main">
-            <h2>Connectez-vous ci-dessous</h2>
+            <h2>Charte d'accessibilité</h2>
             <div class="col-group">
                 <div class="col-12">
-                    <div id="form-div">
-                        <form class="form" id="form1">
-                            <label for="name" class="name">Votre pseudo</label>
-                            <input name="name" type="text" id="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre nom d'utilisateur ou adresse mail" title="Tapez votre nom ici" required="required" aria-invalid="true" />
-
-                            <label for="comment" class="email">Votre mot de passe</label>
-                            <input name="email" type="password" id="comment" class="validate[required,custom[email]] feedback-input" placeholder="Votre mot de passe" title="Tapez votre adresse mail ici" required="required" aria-invalid="true" />
-
-                            <div class="submit">
-                                <input type="submit" value="Connectez-vous" id="button-blue"/>
-                                <div class="ease"></div>
-                            </div>
-                        </form>
-                    </div>
+                    <h3>Tennis World s'engage</h3>
+                    <p>"Mettre le Web et ses services à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales". (Extrait de la définition de l’accessibilité adoptée par le World Wide Web Consortium)</p>
+                    <p>Le site TennisWorld, s’inscrit dans l’accessibilité aux handicapés visant à optimiser l’accès à l’information et à améliorer la qualité des services existants et à venir.</p>
+                    <p>Les principaux acteurs impliqués dans la mise en œuvre de l’accessibilité et contribué à l’élaboration d’un référentiel d’accessibilité publié par DGME, Direction Générale de la Modernisation de l’Etat, au sein du ministère de l’Economie, des Finances et de l’Industrie. Le portail du groupe La Poste a été développé pour répondre aux critères "Argent" (niveau équivalent au niveau AA de W3C/WAI ) du référentiel de la DGME.</p>
                 </div>
                 </article>
 
@@ -53,7 +43,6 @@
 
             <!-- include the jquery-accessibleMegaMenu plugin script -->
             <script src="js/jquery-accessibleMegaMenu.js"></script>
-            <script src="js/slippry.min.js"></script>
 
             <!-- initialize a selector as an accessibleMegaMenu -->
             <script>
@@ -83,31 +72,6 @@
                     /* css class for the open state */
                     openClass: "open"
                 });
-
-
-                $(function() {
-                    var slider = $("#out-of-the-box-demo").slippry({
-                        transition: 'fade',
-                        // useCSS: true,
-                        // speed: 1000,
-                        // pause: 3000,
-                        auto: true,
-                        pager: false
-                        // autoHover: false
-                    });
-
-                    $('.stop').click(function () {
-                        slider.stopAuto();
-                    });
-
-                    $('.start').click(function () {
-                        slider.startAuto();
-                    });
-
-
-
-                });
-
             </script>
             </div>
     </body>

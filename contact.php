@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Contactez l'assistance</title>
+        <title>Tennis World - Contactez l'assistance</title>
         <?php require('header.php'); ?>
 
     </head>
 
     <body>
-        <header>
+       <?php 
+        // Init variable tabindex
+        $i = 0;
+        ?>
+        <header role="banner" aria-label="En tête du site">
+           <div id="evitement">
+                <button onclick="window.location.hash='#form-div'" tabindex="<?php echo $i += 1; ?>" accesskey="p">Aller au contenu</button>
+                <button onclick="window.location.hash='#nav'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
+                <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
+            </div>
             <?php require('nav.php'); ?>
         </header>
 
 
-        <article class="container">
+        <article class="container" role="main">
             <h2>Prenez contact avec notre assistance</h2>
             <div class="col-group">
                 <div class="col-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.1933132837444!2d7.784269115496489!3d48.816372911618615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796ead79d037723%3A0xb460401cd043be5f!2sIUT+de+Haguenau!5e0!3m2!1sfr!2sfr!4v1474880024058" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe tabindex="-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.1933132837444!2d7.784269115496489!3d48.816372911618615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796ead79d037723%3A0xb460401cd043be5f!2sIUT+de+Haguenau!5e0!3m2!1sfr!2sfr!4v1474880024058" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="col-12">
                     <div id="form-div">
                         <form class="form" id="form1">
                             <label for="name" class="name">Votre nom</label>
-                            <input name="name" type="text" id="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre nom" title="Tapez votre nom ici" />
+                            <input name="name" type="text" id="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre nom" title="Tapez votre nom ici" required="required" aria-invalid="true" />
 
                             <label for="email" class="email">Votre mail</label>
-                            <input name="email" type="text" id="email" class="validate[required,custom[email]] feedback-input" placeholder="Votre Email" title="Tapez votre adresse mail ici" />
+                            <input name="email" type="text" id="email" class="validate[required,custom[email]] feedback-input" placeholder="Votre Email" title="Tapez votre adresse mail ici" required="required" aria-invalid="true" />
 
                             <label for="comment" class="text">Votre message</label>
-                            <textarea name="text" id="comment" class="validate[required,length[6,300]] feedback-input" placeholder="Votre message" title="Ecrivez votre message ici"></textarea>
+                            <textarea name="text" id="comment" class="validate[required,length[6,300]] feedback-input" placeholder="Votre message" title="Ecrivez votre message ici" required="required" aria-invalid="true"></textarea>
 
 
                             <div class="submit">

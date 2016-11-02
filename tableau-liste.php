@@ -41,68 +41,33 @@
 
             <div class="col-group">
                 <div class="col-12">
-                    <a id="content" href="tableau-liste.php#prec" tabindex="<?php echo $tb += 1; ?>">Afficher le tableau sous forme de liste</a>
-                    <table summary="Ce tableau représente plusieurs tournois professionnels de tennis durant l'année 2016 avec leur catégorie et leur dotation.">
-                        <tr>
-                            <th id="l1c1">Pays</th>
-                            <th id="l1c2">Tournois</th>
-                            <th id="l1c3">Catégorie</th>
-                            <th id="l1c4">Prize Money</th>
-                        </tr>
-                        <tr>
-                            <th id="l2c1" headers="l1c1" rowspan="3" class="header-table-side border-bot">France</th>
-                            <th id="l2c2" headers="l1c2 l2c1" class="header-table-side">Marseille</th> 
-                            <td headers="l1c3 l2c1 l2c2">ATP 250</td>
-                            <td headers="l1c4 l2c1 l2c2">834 020 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l3c2" headers="l1c2 l2c1" class="header-table-side">Montpellier</th>
-                            <td headers="l1c3 l2c1 l3c2">ATP 250</td>
-                            <td headers="l1c4 l2c1 l3c2">754 680 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l2c2" headers="l1c2 l2c1" class="header-table-side border-bot">Metz</th> 
-                            <td headers="l1c3 l2c1 l2c2" class="border-bot">ATP 250</td>
-                            <td headers="l1c4 l2c1 l2c2" class="border-bot">694 930 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l2c1" headers="l1c1" rowspan="3" class="header-table-side rouge border-bot">Espagne</th>
-                            <th id="l2c2" headers="l1c2 l2c1" class="header-table-side rouge">Barcelone</th> 
-                            <td headers="l1c3 l2c1 l2c2">ATP 500</td>
-                            <td headers="l1c4 l2c1 l2c2">1 230 053 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l3c2" headers="l1c2 l2c1" class="header-table-side rouge">Madrid</th>
-                            <td headers="l1c3 l2c1 l3c2">ATP 500</td>
-                            <td headers="l1c4 l2c1 l3c2">2 405 932 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l2c2" headers="l1c2 l2c1" class="header-table-side rouge border-bot">Malaga</th> 
-                            <td headers="l1c3 l2c1 l2c2" class="border-bot">ATP 250</td>
-                            <td headers="l1c4 l2c1 l2c2" class="border-bot">842 112 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l2c1" headers="l1c1" rowspan="3" class="header-table-side">Allemagne</th>
-                            <th id="l2c2" headers="l1c2 l2c1" class="header-table-side">Munich</th> 
-                            <td headers="l1c3 l2c1 l2c2">ATP 500</td>
-                            <td headers="l1c4 l2c1 l2c2">1 872 320 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l3c2" headers="l1c2 l2c1" class="header-table-side">Sttutgart</th>
-                            <td headers="l1c3 l2c1 l3c2">ATP 250</td>
-                            <td headers="l1c4 l2c1 l3c2">954 980 €</td>
-                        </tr>
-                        <tr>
-                            <th id="l2c2" headers="l1c2 l2c1" class="header-table-side">Hambourg</th> 
-                            <td headers="l1c3 l2c1 l2c2">ATP 500</td>
-                            <td headers="l1c4 l2c1 l2c2">4 694 930 €</td>
-                        </tr>
-                    </table>
+                    <a id="prec" href="index.php?return=true#tournois" tabindex="<?php echo $i += 1; ?>" style="display:none;">Revenir sur la page précédente</a>
+                    <p>Les tournois de tennis durant l'année 2016</p>
+                    <ul>
+                        <li>France
+                            <ul>
+                                <li>Marseille</li>
+                                <li>Montpellier</li>
+                                <li>Metz</li>
+                            </ul>
+                            <ul>
+                                <li>ATP 250</li>
+                                <li>ATP 250</li>
+                                <li>ATP 250</li>
+                            </ul>
+                            <ul>
+                                <li>532 103 €</li>
+                                <li>532 103 €</li>
+                                <li>532 103 €</li>                         
+                            </ul>
+                        </li>
+                    </ul>
+                    <a id="prec" href="index.php?return=true#tournois" tabindex="<?php echo $i += 1; ?>">Revenir sur la page précédente</a>
                 </div>
             </div>
         </article>
 
-        <article class="container" id="tournois">
+        <article class="container">
             <h2>Les tournois de la semaine</h2>
             <div class="col-group">
                 <div class="col-3">

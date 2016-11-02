@@ -7,4 +7,9 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/slippry.css">
-<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>  
+
+<link rel="icon" type="image/ico" href="img/favicon.ico" />
+
+
+
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->

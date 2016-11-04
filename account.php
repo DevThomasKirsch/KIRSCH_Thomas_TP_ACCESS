@@ -3,7 +3,6 @@
     <head>
         <title>Tennis World - Créer votre compte</title>
         <?php require('header.php'); ?>
-
     </head>
 
     <body>
@@ -13,15 +12,21 @@
         ?>
         <header role="banner" aria-label="En tête du site">
            <div id="evitement">
-                <button onclick="window.location.hash='#form-div'" tabindex="<?php echo $i += 1; ?>" accesskey="p">Aller au contenu</button>
+                <button onclick="window.location.hash='#contenu'" tabindex="<?php echo $i += 1; ?>" accesskey="p">Aller au contenu</button>
                 <button onclick="window.location.hash='#nav'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
                 <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
             </div>
             <?php require('nav.php'); ?>
         </header>
+        
+        <div class="container">
+           <div class="bread col-lg-12">
+                <a href="index.php" title="Accueil du site">Accueil ></a>
+                <a href="account.php" title="Création de compte">Compte</a>
+            </div>
+        </div>
 
-
-        <article class="container" role="main">
+        <article id="contenu" class="container" role="main">
             <h2>Créer un compte dès maintenant !</h2>
             <div class="col-group">
                 <div class="col-12">
@@ -61,6 +66,18 @@
 
         <!-- initialize a selector as an accessibleMegaMenu -->
         <script>
+            
+            // Div evitement
+            $("#evitement button:first-child").click(function(){
+                $("#contenu").focus();
+            });
+            $("#evitement button:nth-child(2)").click(function(){
+                $("#nav li:first-child a").focus();
+            });
+            $("#evitement button:nth-child(3)").click(function(){
+                $("#recherche input:first-child").focus();
+            });
+            
             $("nav:first").accessibleMegaMenu({
                 /* prefix for generated unique id attributes, which are required 
                to indicate aria-owns, aria-controls and aria-labelledby */

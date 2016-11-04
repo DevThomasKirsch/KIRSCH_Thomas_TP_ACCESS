@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Tennis World - Connexion au site</title>
+        <title>Tennis World - Conclusion</title>
         <?php require('header.php'); ?>
     </head>
 
     <body>
-       <?php 
+        <?php 
         // Init variable tabindex
         $i = 0;
         ?>
-        <header role="banner" aria-label="En tête du site">
-           <div id="evitement">
+        <header role="banner">
+            <div id="evitement">
                 <button onclick="window.location.hash='#contenu'" tabindex="<?php echo $i += 1; ?>" accesskey="p">Aller au contenu</button>
                 <button onclick="window.location.hash='#nav'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
                 <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
@@ -22,28 +22,19 @@
         <div class="container">
            <div class="bread col-lg-12">
                 <a href="index.php" title="Accueil du site">Accueil ></a>
-                <a href="login.php" title="Se connecter">Se connecter</a>
+                <a href="conclusion.php" title="Page de conclusion">Conclusion</a>
             </div>
         </div>
-
+        
         <article id="contenu" class="container" role="main">
-            <h2>Connectez-vous ci-dessous</h2>
+            <h2>Conclusion du module</h2>
             <div class="col-group">
                 <div class="col-12">
-                    <div id="form-div">
-                        <form class="form" id="form1">
-                            <label for="name" class="name">Votre pseudo</label>
-                            <input name="name" type="text" id="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre nom d'utilisateur ou adresse mail" title="Tapez votre nom ici" required="required" aria-invalid="true" />
-
-                            <label for="comment" class="email">Votre mot de passe</label>
-                            <input name="email" type="password" id="comment" class="validate[required,custom[email]] feedback-input" placeholder="Votre mot de passe" title="Tapez votre adresse mail ici" required="required" aria-invalid="true" />
-
-                            <div class="submit">
-                                <input type="submit" value="Connectez-vous" id="button-blue"/>
-                                <div class="ease"></div>
-                            </div>
-                        </form>
-                    </div>
+                    <p>Le module d'accessibilité web a été une bonne manière de prendre conscience des techniques et des règles d'accessibilités afin de rendre un site web, quel qu'il soit, accessible à tous.</p>
+                    <p>Certaines règles HTML5 que je connaissais seulement de nom sans trop savoir à quoi elles servaient (rôle, aria-label...) sont devenus évidentes durant le cours d'accessibilité web.</p>
+                    <p>Mon avis tout de même, et que l'accessibilité pose problème la plupart du temps au niveau du design du site ainsi qu'à l'expérience utilisateur. Penser à tout le monde fait souvent qu'on en fait de "trop" sur le site et le site devient moins ergonomique.</p>
+                    <p>Je pense que tout les sites d'institutions ou de gouvernements doivent être accessible mais certains sites vitrines pour des petites / moyennes entreprises ne nécessitent pas de rendre accessible le site à 100%.</p>
+                    <p>J'ai augmenté mes connaissances web en accessibilité web et ce que je cherchais à assimiler durant ce cours. </p>
                 </div>
                 </article>
 
@@ -58,11 +49,9 @@
 
             <!-- include the jquery-accessibleMegaMenu plugin script -->
             <script src="js/jquery-accessibleMegaMenu.js"></script>
-            <script src="js/slippry.min.js"></script>
 
             <!-- initialize a selector as an accessibleMegaMenu -->
             <script>
-                
                 // Div evitement
             $("#evitement button:first-child").click(function(){
                 $("#contenu").focus();
@@ -100,31 +89,6 @@
                     /* css class for the open state */
                     openClass: "open"
                 });
-
-
-                $(function() {
-                    var slider = $("#out-of-the-box-demo").slippry({
-                        transition: 'fade',
-                        // useCSS: true,
-                        // speed: 1000,
-                        // pause: 3000,
-                        auto: true,
-                        pager: false
-                        // autoHover: false
-                    });
-
-                    $('.stop').click(function () {
-                        slider.stopAuto();
-                    });
-
-                    $('.start').click(function () {
-                        slider.startAuto();
-                    });
-
-
-
-                });
-
             </script>
             </div>
     </body>

@@ -6,7 +6,6 @@
         <!-- Owl Carousel Assets -->
         <link href="css/owl.carousel.css" rel="stylesheet">
         <link href="css/owl.theme.css" rel="stylesheet">
-
     </head>
 
     <body>
@@ -16,9 +15,9 @@
         ?>
         <header role="banner" aria-label="En tête du site">
             <div id="evitement">
-                <button onclick="window.location.hash='#content'" tabindex="<?php echo $i += 1; ?>" accesskey="p">Aller au contenu</button>
-                <button onclick="window.location.hash='#nav'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
-                <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
+                <button onclick="window.location.hash='#content'" tabindex="<?php echo $i += 1; ?>">Aller au contenu</button>
+                <button onclick="window.location.hash='#nav'" tabindex="<?php echo $i += 1; ?>">Aller au menu</button>
+                <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>">Aller à la recherche</button>
             </div>
             <?php require('nav.php'); ?>
         </header>
@@ -41,14 +40,17 @@
 
             <div class="col-group">
                 <div class="col-12">
-                    <a id="content" href="tableau-liste.php#prec" tabindex="<?php echo $tb += 1; ?>">Afficher le tableau sous forme de liste</a>
+                    <a id="content" title="Tableau simplifié en liste" href="tableau-liste.php#prec" tabindex="<?php echo $tb += 1; ?>">Afficher le tableau sous forme de liste</a>
                     <table summary="Ce tableau représente plusieurs tournois professionnels de tennis durant l'année 2016 avec leur catégorie et leur dotation.">
-                        <tr>
-                            <th id="l1c1">Pays</th>
-                            <th id="l1c2">Tournois</th>
-                            <th id="l1c3">Catégorie</th>
-                            <th id="l1c4">Prize Money</th>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th id="l1c1">Pays</th>
+                                <th id="l1c2">Tournois</th>
+                                <th id="l1c3">Catégorie</th>
+                                <th id="l1c4">Prize Money</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <th id="l2c1" headers="l1c1" rowspan="3" class="header-table-side border-bot">France</th>
                             <th id="l2c2" headers="l1c2 l2c1" class="header-table-side">Marseille</th> 
@@ -97,6 +99,8 @@
                             <td headers="l1c3 l2c1 l2c2">ATP 500</td>
                             <td headers="l1c4 l2c1 l2c2">4 694 930 €</td>
                         </tr>
+                        </tbody>
+                        <caption>Ce tableau est la liste de plusieurs tournois du circuit professionnel de tennis masculin.</caption>
                     </table>
                 </div>
             </div>

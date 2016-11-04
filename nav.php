@@ -30,8 +30,9 @@
                     <a href="#" title="Test" tabindex="<?php echo $i += 1; ?>">Divers</a>
                     <div class="sub-nav">
                         <ul class="sub-nav-group">
-                            <li><a href="account.php" title="Créer votre compte" tabindex="<?php echo $i += 1; ?>">Mentions légales</a></li>
-                            <li><a href="accessibilite.php" title="Se connecter au site" tabindex="<?php echo $i += 1; ?>">Accessibilité</a></li>
+                            <li><a href="mentions.php" title="Créer votre compte" tabindex="<?php echo $i += 1; ?>">Mentions légales</a></li>
+                            <li><a href="accessibilite.php" title="Notre charte d'accessibilité" tabindex="<?php echo $i += 1; ?>">Accessibilité</a></li>
+                            <li><a href="conclusion.php" title="Conclusion du site" tabindex="<?php echo $i += 1; ?>">Conclusion</a></li>
                         </ul>
                     </div>
                 </li>

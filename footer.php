@@ -7,15 +7,17 @@
                 <li><a href="login.php" title="Page de connexion">Login</a></li>
                 <li><a href="account.php" title="Créer votre compte">Créer votre compte</a></li>
                 <li><a href="contact.php" title="Page de contact">Contact</a></li>
+                <li><a href="mentions.php" title="Mentions légales">Mentions légales</a></li>
                 <li><a href="accessibilite.php" title="Charte d'accessibilité">Accessibilité</a></li>
+                <li><a href="conclusion.php" title="Page de conclusion">Conclusion</a></li>
             </ul>
         </div>
         <div class="col-4">
             <h4>Les autres sites du tennis</h4>
             <ul role="listitem">
-                <li><a href="http://www.fft.fr/" target="_blank" title="Site officiel FFT (lien externe)">FFT <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-                <li><a href="http://www.atpworldtour.com/en" target="_blank" title="Site officiel ATP World Tour (lien externe)">ATP World Tour <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-                <li><a href="http://www.wtatennis.com/" target="_blank" title="Site officiel WTA World Tour (lien externe)">WTA World Tour <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.fft.fr/" target="_blank" title="Site officiel FFT (lien externe)"><abbr title="Fédération française de Tennis">FFT</abbr> <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.atpworldtour.com/en" target="_blank" title="Site officiel ATP World Tour (lien externe)"><abbr title="Circuit professionnel masculin">ATP World Tour</abbr> <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.wtatennis.com/" target="_blank" title="Site officiel WTA World Tour (lien externe)"><abbr title="Circuit professionnel féminin">WTA World Tour</abbr> <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <div class="col-4">

@@ -3,7 +3,6 @@
     <head>
         <title>Tennis World - Contactez l'assistance</title>
         <?php require('header.php'); ?>
-
     </head>
 
     <body>
@@ -20,6 +19,12 @@
             <?php require('nav.php'); ?>
         </header>
 
+        <div class="container">
+           <div class="bread col-lg-12">
+                <a href="index.php" title="Accueil du site">Accueil ></a>
+                <a href="contact.php" title="Page de contact">Contact</a>
+            </div>
+        </div>
 
         <article class="container" role="main">
             <h2>Prenez contact avec notre assistance</h2>
@@ -64,6 +69,18 @@
 
             <!-- initialize a selector as an accessibleMegaMenu -->
             <script>
+                
+                // Div evitement
+            $("#evitement button:first-child").click(function(){
+                $("#contenu").focus();
+            });
+            $("#evitement button:nth-child(2)").click(function(){
+                $("#nav li:first-child a").focus();
+            });
+            $("#evitement button:nth-child(3)").click(function(){
+                $("#recherche input:first-child").focus();
+            });
+                
                 $("nav:first").accessibleMegaMenu({
                     /* prefix for generated unique id attributes, which are required 
                to indicate aria-owns, aria-controls and aria-labelledby */
